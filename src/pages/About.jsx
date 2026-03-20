@@ -73,7 +73,7 @@ const About = () => {
             <section className="section" style={{ backgroundColor: 'var(--dark-blue)', color: 'var(--white)' }} data-reveal>
                 <div className="container text-center">
                     <h2 className="section-title" style={{ color: 'var(--white)' }}>Vision & Values</h2>
-                    <div className="industries-grid" style={{ marginTop: '30px' }}>
+                    <div className="industries-grid-2" style={{ marginTop: '30px' }}>
                         {["Integrity", "Compliance", "Reliability", "Scalability", "Technology-Driven"].map((v, i) => (
                             <div key={i} className="industry-item value-card" style={{ backgroundColor: 'rgba(236, 123, 36, 0.8)' }}>
                                 <h3>{v}</h3>

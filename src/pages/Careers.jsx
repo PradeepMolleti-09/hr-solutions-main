@@ -48,21 +48,25 @@ const Careers = () => {
                     <div className="text-center">
                         <h2 className="section-title">Why Join HRTS?</h2>
                     </div>
-                    <div className="industries-grid" style={{ marginTop: '30px' }}>
-                        <div className="industry-item" style={{ backgroundColor: 'var(--white)', border: '1px solid #eee' }}>
-                            <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px' }}>🌍 Pan-India Exposure</h3>
+                    <div className="industries-grid-3" style={{ marginTop: '30px' }}>
+                        <div className="industry-item">
+                            <span className="item-icon">🌍</span>
+                            <h3>Pan-India Exposure</h3>
                             <p>Work with clients and candidates across the country.</p>
                         </div>
-                        <div className="industry-item" style={{ backgroundColor: 'var(--white)', border: '1px solid #eee' }}>
-                            <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px' }}>⚡ Fast Hiring Process</h3>
+                        <div className="industry-item">
+                            <span className="item-icon">⚡</span>
+                            <h3>Fast Hiring Process</h3>
                             <p>We value time and ensure a swift recruitment cycle.</p>
                         </div>
-                        <div className="industry-item" style={{ backgroundColor: 'var(--white)', border: '1px solid #eee' }}>
-                            <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px' }}>🏆 Top Brand Clients</h3>
+                        <div className="industry-item">
+                            <span className="item-icon">🏆</span>
+                            <h3>Top Brand Clients</h3>
                             <p>Build your portfolio by working with industry giants.</p>
                         </div>
-                        <div className="industry-item" style={{ backgroundColor: 'var(--white)', border: '1px solid #eee' }}>
-                            <h3 style={{ color: 'var(--dark-blue)', marginBottom: '10px' }}>💬 Transparent Communication</h3>
+                        <div className="industry-item">
+                            <span className="item-icon">💬</span>
+                            <h3>Transparent Communication</h3>
                             <p>Open culture with merit-based growth opportunities.</p>
                         </div>
                     </div>

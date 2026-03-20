@@ -55,10 +55,17 @@ const Services = () => {
                             We provide both Permanent & Temporary Staffing across various domains including Finance, Sales, Developers, Manufacturing, Healthcare, and Field Executives.
                         </p>
                     </div>
-                    <div className="industries-grid">
-                        {["Finance", "Sales", "IT Developers", "Manufacturing", "Healthcare", "Field Ops"].map((s, i) => (
+                    <div className="industries-grid-1">
+                        {[
+                            { name: "Finance" },
+                            { name: "Sales" },
+                            { name: "IT Developers" },
+                            { name: "Manufacturing" },
+                            { name: "Healthcare" },
+                            { name: "Field Ops" }
+                        ].map((s, i) => (
                             <div key={i} className="industry-item">
-                                <h3>{s}</h3>
+                                <h3>{s.name}</h3>
                             </div>
                         ))}
                     </div>
@@ -89,8 +96,8 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            
-            <section className="section" data-reveal style={{backgroundColor: 'var(--white)'}}>
+
+            <section className="section" data-reveal style={{ backgroundColor: 'var(--white)' }}>
                 <div className="container">
                     <div className="services-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
                         <div className="text-center">
