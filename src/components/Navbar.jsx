@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="nav-actions">
-                        <Link to="/contact" className="desktop-cta">
+                        <Link to="/contact#contact-form" className="desktop-cta">
                             <button className="btn-primary" style={{ fontSize: '0.75rem', padding: '8px 18px', fontWeight: '700' }}>
                                 HIRE TALENT NOW
                             </button>

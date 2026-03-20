@@ -7,7 +7,7 @@ const CTASection = () => {
                 <h2 style={{ color: 'var(--white)', marginBottom: '30px', fontSize: '2.5rem' }}>Ready to Scale Your Workforce?</h2>
                 <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
                     <Link to="/contact" className="btn-secondary" style={{ borderColor: 'var(--white)' }}>Talk to an Expert</Link>
-                    <Link to="/contact" className="btn-secondary" style={{ backgroundColor: 'var(--white)', color: 'var(--orange)', borderColor: 'var(--white)' }}>Request Proposal</Link>
+                    <Link to="/contact#contact-form" className="btn-secondary" style={{ backgroundColor: 'var(--white)', color: 'var(--orange)', borderColor: 'var(--white)' }}>Request Proposal</Link>
                 </div>
             </div>
         </section>

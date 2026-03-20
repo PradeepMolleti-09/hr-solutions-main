@@ -312,21 +312,27 @@
   align-items: center;
   justify-content: center;
   background-color: var(--white);
-  border: 1px solid #eee;
+  border: 1px solid rgba(22, 32, 113, 0.05);
+  box-shadow: var(--shadow);
   height: 100%;
 }
 
 .industry-item:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-hover);
   border-color: var(--orange);
 }
 
 .industry-item h3 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin: 0;
   line-height: 1.4;
-  color: var(--dark-blue);
+  color: var(--dark-blue); /* Default dark blue for visibility on white background */
+  transition: var(--transition);
+}
+
+.industry-item:hover h3 {
+  color: var(--orange) !important;
 }
 
 .industry-item p {
@@ -335,17 +341,54 @@
   line-height: 1.5;
 }
 
+/* Home Section Overrides (Transparent cards with white text) */
+.industries-section .industry-item {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.industries-section .industry-item h3 {
+  color: var(--white);
+}
+
+.industries-section .industry-item p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Light background exception */
+.bg-light .industry-item {
+  background-color: var(--white);
+  border-color: #eee;
+  box-shadow: var(--shadow);
+}
+
+.bg-light .industry-item h3 {
+  color: var(--dark-blue);
+}
+
+.bg-light .industry-item p {
+  color: #666;
+}
+
 .item-icon {
   font-size: 2rem;
   margin-bottom: 15px;
   display: block;
 }
 
+
 /* Resizing for value cards specifically if needed */
 .value-card h3 {
   color: var(--white);
   font-size: 1.2rem;
 }
+
+.industry-item.value-card:hover h3 {
+  color: var(--white) !important;
+}
+
 
 @media (max-width: 1024px) {
 
@@ -380,36 +423,8 @@
   }
 }
 
-.industry-item {
-  background: var(--white);
-  padding: 30px;
-  text-align: center;
-  border-radius: 12px;
-  transition: var(--transition);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(22, 32, 113, 0.05);
-}
+/* Unified industry styles above */
 
-.industry-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--orange);
-  background: var(--white);
-}
-
-.industry-item h3 {
-  margin: 0;
-  font-size: 1.25rem;
-  transition: var(--transition);
-}
-
-.industry-item:hover h3 {
-  color: var(--orange) !important;
-}
 
 /* Logo Strip */
 .logo-strip {

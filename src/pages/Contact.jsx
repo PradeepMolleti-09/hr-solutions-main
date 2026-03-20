@@ -33,23 +33,19 @@ const Contact = () => {
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Call Us</h4>
-                                    <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--orange)' }}>+91 75 69 06 70 02</p>
+                                    <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--orange)' }}>+91 75690 67002</p>
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
                                     <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Email Us</h4>
                                     <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--orange)' }}>info@hrtalentsolutions.in</p>
                                 </div>
-                                <div>
-                                    <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Visit Us</h4>
-                                    <p style={{ fontSize: '1.1rem' }}>www.hrtalentsolutions.in</p>
-                                </div>
                             </div>
                         </div>
 
-                        <div id="contact-form" style={{ 
-                            backgroundColor: 'var(--dark-blue)', 
-                            padding: '60px', 
-                            borderRadius: '20px', 
+                        <div id="contact-form" style={{
+                            backgroundColor: 'var(--dark-blue)',
+                            padding: '60px',
+                            borderRadius: '20px',
                             color: 'var(--white)'
                         }}>
                             <h2 className="section-title" style={{ color: 'var(--white)', marginBottom: '40px' }}>Business Inquiry Form</h2>

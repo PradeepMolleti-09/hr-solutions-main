@@ -55,20 +55,19 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Services</h4>
                         <ul className="footer-links">
-                            <li><Link to="/services">Manpower Outsourcing</Link></li>
-                            <li><Link to="/services">RPO Services</Link></li>
-                            <li><Link to="/services">IT & NON - IT Staffing</Link></li>
-                            <li><Link to="/services">Payroll Compliance</Link></li>
-                            <li><Link to="/services"> Talent Acquisition</Link></li>
+                            <li><Link to="/services#manpower">Manpower Outsourcing</Link></li>
+                            <li><Link to="/services#rpo">RPO Services</Link></li>
+                            <li><Link to="/services#staffing">IT & NON - IT Staffing</Link></li>
+                            <li><Link to="/services#payroll">Payroll Compliance</Link></li>
+                            <li><Link to="/services#talent"> Talent Acquisition</Link></li>
                         </ul>
                     </div>
 
                     <div className="footer-col">
                         <h4>Contact Info</h4>
                         <ul className="footer-links" style={{ opacity: 0.8 }}>
-                            <li>📞 +91 75 69 06 70 02</li>
+                            <li>📞 +91 75690 67002</li>
                             <li>📧 info@hrtalentsolutions.in</li>
-                            <li>🌐 www.hrtalentsolutions.in</li>
                             <li>📍 Pan-India Presence</li>
                         </ul>
                     </div>

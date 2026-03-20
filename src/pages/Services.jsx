@@ -12,16 +12,18 @@ const Services = () => {
                 title="End-to-End Workforce & HR Solutions"
                 subtitle="Streamlining your HR processes with professional expertise."
                 bgImage="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80"
+                showSecondaryBtn={false}
             />
 
             <section className="section" data-reveal>
                 <div className="container">
                     <div className="services-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
                         <div>
-                            <div className="card-img-container" style={{ height: '300px' }}>
+                            <div className="card-img-container" id="manpower" style={{ height: '300px' }}>
                                 <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=600&q=80" alt="Manpower Outsourcing" />
                             </div>
                             <h2 className="section-title">Manpower Outsourcing</h2>
+
                             <ul className="footer-links" style={{ color: 'var(--text-gray)', fontSize: '1.1rem' }}>
                                 <li style={{ marginBottom: '10px' }}>• Recruitment & Selection</li>
                                 <li style={{ marginBottom: '10px' }}>• Seamless Onboarding</li>
@@ -30,11 +32,12 @@ const Services = () => {
                                 <li style={{ marginBottom: '10px' }}>• Performance Appraisal</li>
                             </ul>
                         </div>
-                        <div style={{ backgroundColor: 'var(--dark-blue)', padding: '50px', borderRadius: '15px', color: 'var(--white)' }}>
+                        <div id="rpo" style={{ backgroundColor: 'var(--dark-blue)', padding: '50px', borderRadius: '15px', color: 'var(--white)' }}>
                             <div className="card-img-container" style={{ height: '200px' }}>
                                 <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=600&q=80" alt="RPO Services" />
                             </div>
                             <h2 className="section-title" style={{ color: 'var(--white)' }}>RPO Services</h2>
+
                             <ul style={{ fontSize: '1.1rem' }}>
                                 <li style={{ marginBottom: '10px' }}>• On-site RPO Experts</li>
                                 <li style={{ marginBottom: '10px' }}>• Multi-channel sourcing</li>
@@ -47,7 +50,8 @@ const Services = () => {
                 </div>
             </section>
 
-            <section className="section bg-light" data-reveal>
+            <section className="section bg-light" id="staffing" data-reveal>
+
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-title">IT & NON-IT Staffing</h2>
@@ -72,7 +76,8 @@ const Services = () => {
                 </div>
             </section>
 
-            <section className="section" style={{ backgroundColor: 'var(--dark-blue)', color: 'var(--white)' }} data-reveal>
+            <section className="section" id="payroll" style={{ backgroundColor: 'var(--dark-blue)', color: 'var(--white)' }} data-reveal>
+
                 <div className="container">
                     <div className="services-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
                         <div>
@@ -97,7 +102,8 @@ const Services = () => {
                 </div>
             </section>
 
-            <section className="section" data-reveal style={{ backgroundColor: 'var(--white)' }}>
+            <section className="section" id="talent" data-reveal style={{ backgroundColor: 'var(--white)' }}>
+
                 <div className="container">
                     <div className="services-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
                         <div className="text-center">

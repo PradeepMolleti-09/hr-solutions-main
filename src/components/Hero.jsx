@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Hero = ({ title, subtitle, bgImage = "" }) => {
+const Hero = ({ title, subtitle, bgImage = "", showSecondaryBtn = true }) => {
     return (
         <section
             className="hero"
@@ -11,13 +11,16 @@ const Hero = ({ title, subtitle, bgImage = "" }) => {
                     <h1>{title}</h1>
                     <p>{subtitle}</p>
                     <div className="hero-btns">
-                        <Link to="/contact" className="btn-primary">HIRE TALENT NOW</Link>
-                        <Link to="/services" className="btn-secondary">Explore Services</Link>
+                        <Link to="/contact#contact-form" className="btn-primary">HIRE TALENT NOW</Link>
+                        {showSecondaryBtn && (
+                            <Link to="/services" className="btn-secondary">Explore Services</Link>
+                        )}
                     </div>
                 </div>
             </div>
         </section>
     );
 };
+
 
 export default Hero;

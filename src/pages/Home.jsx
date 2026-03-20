@@ -40,10 +40,10 @@ const Home = () => {
                         {industries.map((industry, index) => (
                             <div key={index} className="industry-item" style={{ overflow: 'hidden', padding: '0', position: 'relative' }}>
                                 <div className="card-img-container" style={{ height: '220px', marginBottom: '0' }}>
-                                    <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', background: 'linear-gradient(to top, rgba(68, 80, 173, 0.9), transparent)', zIndex: '1' }}></div>
+                                    <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', background: 'linear-gradient(to top, rgba(32, 47, 162, 0.9), transparent)', zIndex: '1' }}></div>
                                     <img src={industry.img} alt={industry.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                    <div style={{ position: 'absolute', zIndex: '2', color: 'black', bottom: '20px', left: '20px', textAlign: 'left' }}>
-                                        <h3 style={{ margin: '0', fontSize: '1.2rem' }}>{industry.name}</h3>
+                                    <div style={{ position: 'absolute', zIndex: '2', color: 'var(-- )', bottom: '20px', left: '20px', textAlign: 'left' }}>
+                                        <h3 style={{ margin: '0', fontSize: '1.2rem', color: 'var(--white)', transition: 'var(--transition)' }}>{industry.name}</h3>
                                         <div style={{ width: '30px', height: '2px', background: 'var(--orange)', marginTop: '5px' }}></div>
                                     </div>
                                 </div>
