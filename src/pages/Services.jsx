@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 
 const Services = () => {
@@ -56,8 +57,8 @@ const Services = () => {
                     </div>
                     <div className="industries-grid">
                         {["Finance", "Sales", "IT Developers", "Manufacturing", "Healthcare", "Field Ops"].map((s, i) => (
-                            <div key={i} className="industry-item" style={{ backgroundColor: 'var(--white)', border: '1px solid #eee' }}>
-                                <h3 style={{ color: 'var(--dark-blue)' }}>{s}</h3>
+                            <div key={i} className="industry-item">
+                                <h3>{s}</h3>
                             </div>
                         ))}
                     </div>
@@ -81,9 +82,31 @@ const Services = () => {
                             <div className="card-img-container" style={{ height: '300px', maxWidth: '400px', margin: '0 auto 30px' }}>
                                 <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=600&q=80" alt="Payroll Compliance" />
                             </div>
-                            <button className="btn-primary" style={{ padding: '20px 40px', fontSize: '1.2rem' }}>
+                            <Link to="/contact#contact-form" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none', padding: '20px 40px', fontSize: '1.2rem' }}>
                                 Request Service Consultation
-                            </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section className="section" data-reveal style={{backgroundColor: 'var(--white)'}}>
+                <div className="container">
+                    <div className="services-grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '50px', alignItems: 'center' }}>
+                        <div className="text-center">
+                            <div className="card-img-container" style={{ height: '300px', maxWidth: '400px', margin: '0 auto 30px' }}>
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Talent Acquisition" />
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="section-title">Talent Acquisition</h2>
+                            <ul className="footer-links" style={{ color: 'var(--text-gray)', fontSize: '1.1rem' }}>
+                                <li style={{ marginBottom: '10px' }}>• Executive Search</li>
+                                <li style={{ marginBottom: '10px' }}>• Headhunting Services</li>
+                                <li style={{ marginBottom: '10px' }}>• Specialized Skill Sourcing</li>
+                                <li style={{ marginBottom: '10px' }}>• Leadership Recruitment</li>
+                                <li style={{ marginBottom: '10px' }}>• Market Intelligence & Mapping</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

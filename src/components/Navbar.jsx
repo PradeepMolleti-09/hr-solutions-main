@@ -22,7 +22,7 @@ const Navbar = () => {
                         <NavLink to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</NavLink>
                         <NavLink to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About Us</NavLink>
                         <NavLink to="/services" className="nav-link" onClick={() => setIsOpen(false)}>Services</NavLink>
-                        <NavLink to="/compliance" className="nav-link" onClick={() => setIsOpen(false)}>Compliance</NavLink>
+                        {/* <NavLink to="/compliance" className="nav-link" onClick={() => setIsOpen(false)}>Compliance</NavLink> */}
                         <NavLink to="/clients" className="nav-link" onClick={() => setIsOpen(false)}>Clients</NavLink>
                         <NavLink to="/careers" className="nav-link" onClick={() => setIsOpen(false)}>Careers</NavLink>
                         <NavLink to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact Us</NavLink>

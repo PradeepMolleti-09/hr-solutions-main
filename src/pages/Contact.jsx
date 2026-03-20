@@ -23,31 +23,36 @@ const Contact = () => {
 
             <section className="section" data-reveal>
                 <div className="container">
-                    <div className="services-grid" style={{ gridTemplateColumns: '1fr 1.5fr', gap: '50px' }}>
+                    <div className="services-grid" style={{ gridTemplateColumns: '1.2fr 1.5fr', gap: '80px', alignItems: 'flex-start' }}>
                         <div>
-                            <h2 className="section-title">Contact Details</h2>
-                            <div style={{ marginTop: '30px' }}>
+                            <h2 className="section-title" style={{ fontSize: '3rem', marginBottom: '50px' }}>Contact Details</h2>
+                            <div style={{ marginTop: '40px' }}>
                                 <div style={{ marginBottom: '30px' }}>
-                                    <h4 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Office Address</h4>
-                                    <p>HR Talent Solutions Pvt Ltd<br />1st Floor, Finecab Chambers, 1-8-229/2 & 2/A<br />PG Road, Sindhi Colony, Begumpet<br />Secunderabad, Hyderabad, Telangana - 500003</p>
+                                    <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Office Address</h4>
+                                    <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>HR Talent Solutions Pvt Ltd<br />1st Floor, Finecab Chambers, 1-8-229/2 & 2/A<br />PG Road, Sindhi Colony, Begumpet<br />Secunderabad, Hyderabad, Telangana - 500003</p>
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
-                                    <h4 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Call Us</h4>
-                                    <p style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--orange)' }}>+91 75 69 06 70 02</p>
+                                    <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Call Us</h4>
+                                    <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--orange)' }}>+91 75 69 06 70 02</p>
                                 </div>
                                 <div style={{ marginBottom: '30px' }}>
-                                    <h4 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Email Us</h4>
-                                    <p style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--orange)' }}>info@hrtalentsolutions.in</p>
+                                    <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Email Us</h4>
+                                    <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--orange)' }}>info@hrtalentsolutions.in</p>
                                 </div>
                                 <div>
-                                    <h4 style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Visit Us</h4>
-                                    <p>www.hrtalentsolutions.in</p>
+                                    <h4 style={{ fontSize: '1.3rem', marginBottom: '10px', color: 'var(--dark-blue)' }}>Visit Us</h4>
+                                    <p style={{ fontSize: '1.1rem' }}>www.hrtalentsolutions.in</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div style={{ backgroundColor: 'var(--dark-blue)', padding: '50px', borderRadius: '15px', color: 'var(--white)' }}>
-                            <h2 className="section-title" style={{ color: 'var(--white)' }}>Business Inquiry Form</h2>
+                        <div id="contact-form" style={{ 
+                            backgroundColor: 'var(--dark-blue)', 
+                            padding: '60px', 
+                            borderRadius: '20px', 
+                            color: 'var(--white)'
+                        }}>
+                            <h2 className="section-title" style={{ color: 'var(--white)', marginBottom: '40px' }}>Business Inquiry Form</h2>
                             {submitted ? (
                                 <div style={{ padding: '20px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px', textAlign: 'center' }}>
                                     <h3 style={{ color: 'var(--white)' }}>✅ Thank you!</h3>
@@ -56,22 +61,25 @@ const Contact = () => {
                             ) : (
                                 <form onSubmit={handleSubmit} style={{ display: 'grid', gap: '20px' }}>
                                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                                        <input type="text" placeholder="Your Name" required style={{ padding: '12px', borderRadius: '4px', border: 'none' }} />
-                                        <input type="text" placeholder="Company Name" required style={{ padding: '12px', borderRadius: '4px', border: 'none' }} />
+                                        <input type="text" placeholder="Your Name" required style={{ padding: '15px', borderRadius: '8px', border: 'none', backgroundColor: 'white', width: '100%' }} />
+                                        <input type="text" placeholder="Company Name" required style={{ padding: '15px', borderRadius: '8px', border: 'none', backgroundColor: 'white', width: '100%' }} />
                                     </div>
                                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                                        <input type="tel" placeholder="Phone Number" required style={{ padding: '12px', borderRadius: '4px', border: 'none' }} />
-                                        <input type="email" placeholder="Business Email" required style={{ padding: '12px', borderRadius: '4px', border: 'none' }} />
+                                        <input type="tel" placeholder="Phone Number" required style={{ padding: '15px', borderRadius: '8px', border: 'none', backgroundColor: 'white', width: '100%' }} />
+                                        <input type="email" placeholder="Business Email" required style={{ padding: '15px', borderRadius: '8px', border: 'none', backgroundColor: 'white', width: '100%' }} />
                                     </div>
-                                    <select style={{ padding: '12px', borderRadius: '4px', border: 'none' }}>
+                                    <select style={{ padding: '15px', borderRadius: '8px', border: 'none', backgroundColor: 'white', width: '100%', cursor: 'pointer' }}>
                                         <option>Requirement Type</option>
                                         <option>Manpower Outsourcing</option>
                                         <option>RPO Services</option>
-                                        <option>IT Staffing</option>
+                                        <option>IT & NON - IT Staffing</option>
                                         <option>Payroll & Compliance</option>
+                                        <option>Talent Acquisition</option>
                                     </select>
-                                    <textarea placeholder="Your Message" rows="4" style={{ padding: '12px', borderRadius: '4px', border: 'none' }}></textarea>
-                                    <button type="submit" className="btn-primary">SEND MESSAGE</button>
+                                    <textarea placeholder="Your Message" rows="5" style={{ padding: '15px', borderRadius: '8px', border: 'none', backgroundColor: 'white', width: '100%' }}></textarea>
+                                    <button type="submit" className="btn-primary" style={{ padding: '18px', borderRadius: '8px', fontSize: '1.2rem', textTransform: 'uppercase', boxShadow: '0 4px 15px rgba(236,123,36,0.3)' }}>
+                                        SEND MESSAGE
+                                    </button>
                                 </form>
                             )}
                         </div>

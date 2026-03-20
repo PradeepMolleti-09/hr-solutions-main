@@ -8,7 +8,7 @@ const About = () => {
         document.title = "About Us | HR Talent Solutions";
     }, []);
     const snapshot = [
-        { label: "Branches", val: "2" },
+        { label: "Branches", val: "5+" },
         { label: "Operating Locations", val: "80+" },
         { label: "Direct Employees", val: "70+" },
         { label: "Associates", val: "2,000+" },
@@ -16,9 +16,8 @@ const About = () => {
     ];
 
     const management = [
-        { name: "Narendra Kotti", role: "CEO", img: "https://i.pravatar.cc/150?u=nk", linkedin: "https://www.linkedin.com/in/narendra-kotti-9b34a116/" },
-        { name: "Dr SSN Srinivas", role: "Advisor", img: "https://i.pravatar.cc/150?u=dsn", linkedin: "https://www.linkedin.com" },
-        { name: "KVS Rajani Kant", role: "AVP HR Operations", img: "https://i.pravatar.cc/150?u=kvs", linkedin: "https://www.linkedin.com/in/kvs-rajanikant-b67683aa/" }
+        { name: "Narendra Kotti", role: "CEO", img: "/Narendra.png", linkedin: "https://www.linkedin.com/in/narendra-kotti-15863318b/" },
+        { name: "KVS Rajani Kant", role: "AVP HR Operations", img: "/Rajini.png", linkedin: "https://www.linkedin.com/in/kvs-rajanikant-b67683aa/" }
     ];
 
 
@@ -35,7 +34,7 @@ const About = () => {
                     <div className="text-center">
                         <h2 className="section-title">Company Snapshot</h2>
                     </div>
-                    <div className="stats-grid" style={{ marginTop: '30px' }}>
+                    <div className="stats-grid-1" style={{ marginTop: '30px' }}>
                         {snapshot.map((s, i) => (
                             <div key={i} className="stat-item">
                                 <h2>{s.val}</h2>

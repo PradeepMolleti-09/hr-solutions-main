@@ -57,8 +57,9 @@ const Footer = () => {
                         <ul className="footer-links">
                             <li><Link to="/services">Manpower Outsourcing</Link></li>
                             <li><Link to="/services">RPO Services</Link></li>
-                            <li><Link to="/services">IT Staffing</Link></li>
+                            <li><Link to="/services">IT & NON - IT Staffing</Link></li>
                             <li><Link to="/services">Payroll Compliance</Link></li>
+                            <li><Link to="/services"> Talent Acquisition</Link></li>
                         </ul>
                     </div>
 

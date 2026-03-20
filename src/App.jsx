@@ -31,6 +31,27 @@ const AppContent = () => {
         return () => observer.disconnect();
     }, [location]);
 
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.slice(1);
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    const offset = 100; // Account for sticky navbar (85px) + some padding
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = element.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
+        }
+    }, [location]);
+
     return (
         <>
             <ScrollToTop />

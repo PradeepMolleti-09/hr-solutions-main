@@ -178,6 +178,13 @@
   text-align: center;
 }
 
+.stats-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
 .stat-item h2 {
   font-size: 2.5rem;
   color: var(--orange);
@@ -268,20 +275,54 @@
 
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .industry-item {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--white);
   padding: 30px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(22, 32, 113, 0.05);
 }
 
 .industry-item:hover {
-  background: var(--orange);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--orange);
+  background: var(--white);
+}
+
+.industry-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.industry-item:hover h3 {
+  color: var(--orange) !important;
 }
 
 /* Logo Strip */
